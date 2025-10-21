@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 3rem 0;
+}
+
+.order-summry {
+    max-width: 467px;
+    background-color: white;
+    text-align: center;
+    padding-bottom: 3rem;
+    border-radius: 20px;
+    box-shadow: -1px 9px 16px hsl(224deg 23% 55% / 47%);
+}
+
+.order-summry .hero-img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.order-summry .heading {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.order-summry .sub-head {
+    font-weight: 500;
+    max-width: 385px;
+    font-size: 1.1rem;
+    margin: auto;
+    color: hsl(224, 23%, 55%);
+}
+
+.plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    max-width: 340px;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.icon-amount {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon-amount label {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.icon-amount p {
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+    margin-top: 0.2rem;
+}
+
+.plan button {
+    border-style: none;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: transparent;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: all 0.3s ease;
+}
+
+.plan button:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.proceed-btn {
+    border-style: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 370px;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 7px 20px hsl(245deg 75% 52% / 59%);
+    transition: all 0.3s ease;
+}
+
+.proceed-btn:hover {
+    opacity: 0.7;
+}
+
+.cancel-order {
+    border-style: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 800;
+    color: hsl(224, 23%, 55%);
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cancel-order:hover {
+    color: hsl(223, 47%, 23%)
+}
+
+@media (max-width: 764px) {
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+
+    .main {
+        padding: 3rem 1rem;
+    }
+
+    .proceed-btn {
+        max-width: 300px;
+    }
+
+    .plan {
+        max-width: 272px;
+    }
+}
