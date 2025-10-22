@@ -21,7 +21,7 @@ body {
 }
 
 .order-summry {
-    max-width: 467px;
+    max-width: 430px;
     background-color: white;
     text-align: center;
     padding-bottom: 3rem;
@@ -97,6 +97,8 @@ body {
 }
 
 .proceed-btn {
+    display: block;
+    margin: auto;
     border-style: none;
     cursor: pointer;
     font-size: 1rem;
